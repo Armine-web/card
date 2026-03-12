@@ -23,7 +23,7 @@
 .speaker-card__ads {
   position: absolute;
   right: 115px;
-  top: -10px;
+  top: -7px;
   background: url("images/ads.png") no-repeat center center;
   background-size: cover;
   max-width: 235px;
@@ -67,7 +67,10 @@
   width: 48px;
   height: 48px;
   cursor: pointer;
-  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
 }
 
 .speaker-card__progress-ring {
