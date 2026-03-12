@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section class="speaker-card">
+      <div class="container">
+        <div class="speaker-card__ads">
+          <p>
+            Федеральный диктор, актёр. Голос СТС и Вина Дизеля. Специализация:
+            озвучка рекламы,
+          </p>
+        </div>
+        <div class="speaker-card__wrapper">
+          <div class="speaker-card__media">
+            <div class="speaker-card__photo">
+              <img
+                src="images/Sergey Chonishvili.png"
+                alt="Sergey Chonishvili"
+                class="speaker-card__img"
+              />
+              <button class="speaker-card__play">▶</button>
+
+              <svg class="speaker-card__progress-ring" width="84" height="84">
+                <circle
+                  class="speaker-card__progress-ring-circle"
+                  stroke="#c1492e"
+                  stroke-width="4"
+                  fill="transparent"
+                  r="40"
+                  cx="42"
+                  cy="42"
+                />
+              </svg>
+
+              <audio src="audio/137_chonishvili-sergej_demo.mp3"></audio>
+            </div>
+          </div>
+          <div class="speaker-card__content">
+            <div class="speaker-card__header">
+              <h1 class="speaker-card__name">
+                <a href="#"></a>Сергей Чонишвили
+                <img src="images/Group.png" alt="icon" />
+              </h1>
+              <p class="speaker-card__address">г. Москва, Санкт-Петербург</p>
+
+              <div class="speaker-card__rating">
+                <div>
+                  <span class="speaker-card__rating-number">4.8</span>
+                  <span class="speaker-card__stars" data-rating="5"
+                    >★ ★ ★ ★ ★</span
+                  >
+                </div>
+                <div>
+                  <span class="speaker-card__message"
+                    ><img src="images/Review.png" alt="Review"
+                  /></span>
+                  <span class="speaker-card__reviews">100+ отзывов</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="speaker-card__favorite right">
+            <img src="images/Vector.png" alt="Favorite" />
+          </button>
+        </div>
+
+        <div class="speaker-card__videos">
+          <div class="speaker-card__video">
+            <video poster="images/Sergey Chonishvili video.png">
+              <source src="video.mp4" type="video/mp4" />
+              Ваш браузер не поддерживает тег <code>video</code>.
+            </video>
+
+            <button class="speaker-card__videoPlay">▶</button>
+          </div>
+          <div class="speaker-card__video">
+            <video poster="images/Sergey Chonishvili video.png">
+              <source src="video.mp4" type="video/mp4" />
+              Ваш браузер не поддерживает тег <code>video</code>.
+            </video>
+
+            <button class="speaker-card__videoPlay">▶</button>
+          </div>
+          <div class="speaker-card__video">
+            <video poster="images/Sergey Chonishvili video.png">
+              <source src="video.mp4" type="video/mp4" />
+              Ваш браузер не поддерживает тег <code>video</code>.
+            </video>
+
+            <button class="speaker-card__videoPlay">▶</button>
+          </div>
+        </div>
+
+        <div class="speaker-card__info">
+          <div class="speaker-card__price">
+            <img src="images/price.png" alt="priceIcon" />
+            <span>Цена от 10 000 ₽ </span>
+          </div>
+
+          <div class="speaker-card__actions">
+            <button class="btn btn--primary">Проверить дату</button>
+
+            <button class="btn btn--secondary contact-btn">Заказать</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

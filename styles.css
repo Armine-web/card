@@ -1,0 +1,394 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 27px 35px;
+  background: #f4f4f4;
+  border-radius: 55px;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
+.speaker-card__wrapper {
+  display: flex;
+  gap: 21px;
+  align-items: flex-start;
+}
+
+.speaker-card__ads {
+  position: absolute;
+  right: 115px;
+  top: -10px;
+  background: url("images/ads.png") no-repeat center center;
+  background-size: cover;
+  max-width: 235px;
+  padding: 18px 10px 30px 10px;
+}
+
+.speaker-card__ads p {
+  font-family: Roboto, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #ffff;
+  padding: 0 10px;
+}
+
+.speaker-card__photo {
+  position: relative;
+  width: 84px;
+  height: 84px;
+}
+
+.speaker-card__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: block;
+}
+
+.speaker-card__play {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  transform: translateX(-50%);
+  font-size: 20px;
+  background-color: #c1492e;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.speaker-card__progress-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 84px;
+  height: 84px;
+  transform: rotate(-90deg);
+  z-index: 1;
+}
+
+.speaker-card__progress-ring-circle {
+  stroke-dasharray: 238.76;
+  stroke-dashoffset: 238.76;
+  transition: stroke-dashoffset 0.1s linear;
+  transform: translate(0, 0);
+}
+
+.speaker-card__header {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.speaker-card__name {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  letter-spacing: 0%;
+  color: #c1492e;
+  text-decoration: underline;
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.speaker-card__name img {
+  margin-left: 10px;
+}
+
+.speaker-card__address {
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  background: #7b81b2;
+  background-clip: text;
+  color: transparent;
+  letter-spacing: 0%;
+  margin: 0;
+}
+
+.speaker-card__rating {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: #3b4173;
+}
+
+.speaker-card__stars {
+  color: #c1492e;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.speaker-card__message {
+  font-family: Roboto, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 0%;
+  cursor: pointer;
+}
+
+.speaker-card__wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 36px;
+}
+
+.right {
+  align-items: right;
+  justify-self: end;
+}
+
+.speaker-card__favorite {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.speaker-card__videos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.speaker-card__video {
+  position: relative;
+  display: inline-block;
+  width: 270px;
+  height: 180px;
+}
+
+.speaker-card__video button {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #c1492e;
+  border: 1px solid #fff;
+  padding: 6px 8px 8px 14px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+.speaker-card__video:hover button {
+  display: block;
+}
+
+.speaker-card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.speaker-card__price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.speaker-card__price span {
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 22px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #c1492e;
+}
+
+.speaker-card__actions {
+  display: flex;
+  gap: 15px;
+}
+
+.speaker-card__actions button {
+  border-radius: 15px;
+  border: 1px solid #c1492e;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0%;
+}
+
+.btn--primary {
+  padding: 15px 23px;
+  color: #c1492e;
+}
+
+.btn--primary:hover {
+  color: #fff;
+  background: #c1492e;
+}
+
+.btn--secondary {
+  padding: 15px 47px;
+  color: #fff;
+  background: #c1492e;
+}
+
+.btn--secondary:hover {
+  color: #c1492e;
+  background: #fff;
+}
+
+@media (max-width: 900px) {
+  .container {
+    border-radius: 15px;
+  }
+  .speaker-card__videos {
+    display: flex;
+    gap: 16px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .speaker-card__videos::-webkit-scrollbar {
+    display: none;
+  }
+
+  .speaker-card__video {
+    flex: 0 0 auto;
+    width: 300px;
+  }
+
+  .speaker-card__name {
+    font-size: 11px;
+  }
+
+  .speaker-card__name img,
+  .speaker-card__message img {
+    width: 13px;
+    height: 13px;
+  }
+
+  .speaker-card__address {
+    font-size: 10px;
+  }
+
+  .speaker-card__rating-number,
+  .speaker-card__stars,
+  .speaker-card__reviews {
+    font-size: 10px;
+  }
+
+  .speaker-card__ads {
+    width: 120px;
+    top: -5px;
+    right: 30px;
+    padding: 8px 6px 14px 6px;
+  }
+
+  .speaker-card__name img {
+    margin-left: 4px;
+  }
+
+  .speaker-card__ads p {
+    font-size: 7px;
+    padding: 10px 0;
+  }
+
+  .speaker-card__wrapper {
+    gap: 9px;
+  }
+
+  .speaker-card__favorite {
+    display: none;
+  }
+  .speaker-card__photo {
+    width: 58px;
+    height: 58px;
+  }
+
+  .speaker-card__play {
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+  }
+
+  .speaker-card__progress-ring {
+    width: 58px;
+    height: 58px;
+  }
+
+  .speaker-card__progress-ring-circle {
+    r: 27;
+    cx: 29;
+    cy: 29;
+  }
+
+  .speaker-card__play {
+    width: 32px;
+    height: 32px;
+    font-size: 14px;
+  }
+
+  .speaker-card__info {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .speaker-card__price {
+    align-self: flex-start;
+    font-size: 13px;
+  }
+
+  .speaker-card__actions button {
+    font-size: 14px;
+    width: 124px;
+  }
+
+  .speaker-card__actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .btn--primary {
+    padding: 4px 9px;
+  }
+
+  .btn--secondary {
+    padding: 5px 9px;
+  }
+
+  .contact-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .contact-btn svg {
+    background-color: #229ed9;
+    padding: 3px;
+    border-radius: 50%;
+    text-decoration: none;
+  }
+
+  .speaker-card__videos {
+    margin-right: -35px;
+  }
+
+  .speaker-card__video {
+    width: 280px;
+  }
+}
