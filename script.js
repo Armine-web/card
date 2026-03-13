@@ -16,10 +16,10 @@ function setProgress(percent) {
 playBtn.addEventListener("click", () => {
   if (audio.paused) {
     audio.play();
-    playBtn.textContent = "⏸";
+    playBtn.textContent = "❚❚";
   } else {
     audio.pause();
-    playBtn.textContent = "▶";
+    playBtn.textContent = "►";
   }
 });
 
@@ -30,7 +30,7 @@ audio.addEventListener("timeupdate", () => {
 
 audio.addEventListener("ended", () => {
   setProgress(0);
-  playBtn.textContent = "▶";
+  playBtn.textContent = "►";
 });
 
 ///////////////
