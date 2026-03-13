@@ -55,10 +55,13 @@
 }
 
 button {
-  -webkit-tap-highlight-color: transparent;
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
   appearance: none;
   -webkit-appearance: none;
-  border: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .speaker-card__play {
@@ -80,6 +83,18 @@ button {
   align-items: center;
   justify-content: center;
   line-height: 0;
+}
+
+.speaker-card__play,
+.speaker-card__videoPlay {
+  background: #c1492e;
+  color: #fff;
+}
+
+button:focus,
+button:active {
+  outline: none;
+  box-shadow: none;
 }
 
 .speaker-card__progress-ring {
