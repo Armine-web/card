@@ -54,7 +54,16 @@
   display: block;
 }
 
+button {
+  -webkit-tap-highlight-color: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+}
+
 .speaker-card__play {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
   position: absolute;
   top: -6px;
   left: 0;
